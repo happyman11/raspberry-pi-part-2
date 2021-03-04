@@ -1,0 +1,45 @@
+sudo apt-get install motion
+
+lsusb
+
+sudo nano /etc/motion/motion.conf
+
+ctrl + w
+
+
+
+daemon' is ON
+
+Set 'width' & 'height' to 640 & 480.
+
+'framerate' anywhere in between 1000 to 1500.
+
+
+Keep 'Stream_port' to 8081.
+
+'Stream_quality' should be 100.
+
+Change 'Stream_localhost' to OFF.
+
+Change 'webcontrol_localhost' to OFF.
+
+Set 'quality' to 100.
+
+Set 'post_capture' to 5.
+
+ctrl + x
+
+
+
+
+'sudo nano /etc/default/motion 
+
+ start_motion_daemon ' to yes.
+
+
+'sudo service motion restart'
+
+sudo motion
+
+
+192.168.0.107:8081
